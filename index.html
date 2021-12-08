@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Theme Park</title>
+    <link rel="stylesheet" href="css/calendar.css">
+</head>
+<body onload="renderCalendar()">
+<!--------------- HEADER --------------->
+<header>
+    <h1><a href="#"> The Theme Park</a></h1>
+    <nav>
+        <ul>
+            <li><a href="things_to_do.html">Things to Do</a></li>
+            <li><a href="park_tickets.html">Park Tickets</a></li>
+        </ul>
+    </nav>
+</header>
+<!--------------- MAIN IMAGE --------------->
+<section>
+    <picture>
+        <source srcset="images/home_main_sp.png" media="(max-width: 500px)"/>
+        <img src="images/home_main.png" alt="main image"/>
+    </picture>
+</section>
+<!------------ CALENDAR AND MAP ------------>
+<section>
+    <div class="grid">
+        <div id="calendar"></div>
+        <div>
+            <h2>Map</h2>
+            <div id="map">
+                <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=100%20Universal%20City%20Plaza,%20Universal%20City,%20CA%2091608+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                </iframe>
+            </div>
+            <h3>Address</h3>
+            <p>100 Universal City Plaza, Universal City, CA 91608</p>
+            <button>Get Tickets</button>
+        </div>
+    </div>
+</section>
+<!--------------- UPCOMING EVENT --------------->
+<section>
+    <h2>Upcoming Event</h2>
+    <article>
+        <img src="images/event_1.png" alt="Create Holiday Traditions with Friends and Family!"/>
+        <h3>Create Holiday Traditions with Friends and Family!</h3>
+        <h4>NOVEMBER 26 – JANUARY 2</h4>
+        <p>Our Theme Park is the perfect destination for creating new holiday traditions with the whole family. End your
+            day at The Theme Park, where you can enjoy our spectacular Christmas tree, sumptuous outdoor dining, and fun
+            holiday shopping.</p>
+    </article>
+    <article>
+        <img src="images/event_2.png" alt="Halloween  at The Theme park"/>
+        <h3>Halloween at The Theme park</h3>
+        <h4>OCTOBER 1 – OCTOBER 31</h4>
+        <p>The family-friendly Tricks And Treats Fall Fest includes trick-or-treating, seasonal snacks ranging from
+            candy corn cupcakes to pumpkin bread pudding, corn and hay mazes, arts and crafts, spooky selfie stations
+            and more.</p>
+    </article>
+    <article>
+        <img src="images/event_3.png" alt="An Earth Day Celebration"/>
+        <h3>An Earth Day Celebration</h3>
+        <h4>APRIL 1 - APRIL 22</h4>
+        <p>Join the Earth Day Celebration and connect with the magic of nature through special experiences! During the
+            annual Earth Day Celebration there’s an added opportunity for The Theme Park guests to connect with the
+            magic of nature through engaging activities designed to educate and inspire the whole family.</p>
+    </article>
+</section>
+<!--------------- FOOTER --------------->
+<footer>
+    <p>Copyright © 2021 Theme Park Name. All Rights Reserved.</p>
+</footer>
+<!--scripts-->
+<script src="script/calendar.js"></script>
+
+</body>
+</html>

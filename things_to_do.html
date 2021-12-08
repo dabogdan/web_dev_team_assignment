@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Theme Park</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Saira+Stencil+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css" media="screen">
+    <link rel="stylesheet" href="css/things_to_do.css" media="screen">
+</head>
+<body>
+        <!--------------- HEADER --------------->
+        <header class="header">
+            <div class="header__wrapper">
+                <h1 class="header__title"><a href="./index.html"> The Theme Park</a></h1>
+                <nav>
+                    <ul class="header__menu_list">
+                        <li><a href="./things_to_do.html">Things to Do</a></li>
+                        <li><a href="./park_tickets.html">Park Tickets</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!--------------- MAIN IMAGE --------------->
+        <section class="main">
+            <picture class="main__image">
+                <source srcset="images/things_to_do_main_sp.png" media="(max-width: 500px)"/>
+                <img src="images/things_to_do_main.png" alt="Things To Do" class="main__image_pc" />
+            </picture>
+        </section>
+        <!--------------- THINGS TO DO --------------->
+        <section class="things_to_do">
+            <h2 class="things_to_do__title">Things to Do at The Theme Park</h2>
+            <p class="things_to_do__description">Enjoy with an exciting range of dining, shopping, entertainment and attractions for kids, teens and adults.</p>
+            <picture class="things_to_do__image">
+                <source srcset="images/things_to_do_img_sp.png" media="(max-width: 500px)" />
+                <img src="images/things_to_do_img.png" alt="Things to Do at The Theme Park" />
+            </picture>
+        </section>
+        <!--------------- UPCOMING EVENT --------------->
+        <section class="upcoming_event">
+            <h2 class="upcoming_event__title">Upcoming Event</h2>
+            <article class="upcoming_event__article">
+                <div class="article_image"><img src="images/event_1.png" alt="Create Holiday Traditions with Friends and Family!" /></div>
+                <div class="article_text">
+                    <h3 class="article_title">Create Holiday Traditions with Friends and Family!</h3>
+                    <h4 class="article_date">NOVEMBER 26 – JANUARY 2</h4>
+                    <p class="article_description">Our Theme Park is the perfect destination for creating new holiday traditions with the whole family. End your day at The Theme Park, where you can enjoy our spectacular Christmas tree, sumptuous outdoor dining, and fun holiday shopping.</p>
+                </div>
+            </article>
+            <article class="upcoming_event__article">
+                <div class="article_image">
+                    <img src="images/event_2.png" alt="Halloween  at The Theme park" />
+                </div>
+                <div class="article_text">
+                    <h3 class="article_title">Halloween  at The Theme park</h3>
+                    <h4 class="article_date">OCTOBER 1 – OCTOBER 31</h4>
+                    <p class="article_description">The family-friendly Tricks And Treats Fall Fest includes trick-or-treating, seasonal snacks ranging from candy corn cupcakes to pumpkin bread pudding, corn and hay mazes, arts and crafts, spooky selfie stations and more.</p>
+                </div>
+            </article>
+            <article class="upcoming_event__article">
+                <div class="article_image">
+                    <img src="images/event_3.png" alt="An Earth Day Celebration" />
+                </div>
+                <div class="article_text">
+                    <h3 class="article_title">An Earth Day Celebration</h3>
+                    <h4 class="article_date">APRIL 1 - APRIL 22</h4>
+                    <p class="article_description">Join the Earth Day Celebration and connect with the magic of nature through special experiences! During the annual Earth Day Celebration there’s an added opportunity for The Theme Park guests to connect with the magic of nature through engaging activities designed to educate and inspire the whole family.</p>
+                </div>
+            </article>
+        </section>
+        <!--------------- FOOTER --------------->
+        <footer class="footer">
+            <p>Copyright © 2021 Theme Park Name. All Rights Reserved.</p>
+        </footer>
+</body>
+</html>

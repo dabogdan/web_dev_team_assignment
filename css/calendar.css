@@ -1,0 +1,68 @@
+.monthPre{
+    color: gray;
+    text-align: center;
+}
+.monthNow{
+    color: blue;
+    text-align: center;
+}
+.dayNow{
+    border: 2px solid black;
+    color: #4bb82a;
+    text-align: center;
+}
+
+.dayNow:hover {
+    background-color: yellow;
+    cursor: pointer;
+}
+
+#calendar {
+    width: 270px;
+    /*transition: transform .8s;*/
+}
+
+.calendar td{
+    width: 40px;
+}
+.yearNow th{
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.monthNow:hover{
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.dayNames{
+    background: #0FF000;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.monthLeft, .monthRight {
+    cursor: pointer;
+}
+
+.eventMark {
+    color: red;
+}
+
+.rotate {
+    /*transform: rotateY(0.5turn);*/
+    transition: all .3s ease-in;
+}
+
+.eventTag {
+    /*transform: rotateY(0.5turn);*/
+    display: block;
+    position: relative;
+    top: 20px;
+    transition: transform 0s;
+}
+
+.closeButton {
+    cursor: pointer;
+}
