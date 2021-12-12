@@ -1,3 +1,7 @@
+// The calendar was made on the basis of the simple one https://www.webcodegeeks.com/javascript/javascript-calendar-example/, but deeply adjusted
+
+
+
 let calendarTag = document.getElementById("calendar");
 
 //global vars to render the calendar
@@ -74,10 +78,10 @@ function showEvent (e, c){
 }
 
 function renderCalendarBody () {
-    let calendarBody = "<table class='calendar'> <tr class='yearNow'><th class='monthLeft' onClick='renderCalendar(-1)'><<</th><th colspan='5'>"
-        + monthNames[month] + " " + year + "</th><th class='monthRight' onClick='renderCalendar(1)'>>></th></tr>";
-    calendarBody += "<tr class='dayNames'>  <td>Sun</td>  <td>Mon</td> <td>Tues</td>" +
-        "<td>Wed</td> <td>Thurs</td> <td>Fri</td> <td>Sat</td> </tr>";
+    let calendarBody = "<table class='calendar'> <tr class='yearNow'><th colspan='4'>"
+        + monthNames[month] + " " + year + "</th><th class='monthLeft' onClick='renderCalendar(-1)'><<</th><th class='monthRight' onClick='renderCalendar(1)'>>></th></tr>";
+    calendarBody += "<tr class='dayNames'>  <td>Sun</td>  <td>Mon</td> <td>Tue</td>" +
+        "<td>Wed</td> <td>Thu</td> <td>Fri</td> <td>Sat</td> </tr>";
     calendarBody += "<tr>";
     calendarBody += htmlContent;
     calendarBody += "</tr></table>";

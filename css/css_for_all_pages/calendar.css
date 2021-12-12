@@ -1,45 +1,61 @@
+
+/*The calendar was made on the basis of the simple one https://www.webcodegeeks.com/javascript/javascript-calendar-example/, but deeply adjusted*/
+
 .monthPre{
     color: gray;
     text-align: center;
 }
 .monthNow{
-    color: blue;
+    color: black;
     text-align: center;
+    width: 60px;
+    font-family: 'Roboto', sans-serif;
 }
+
 .dayNow{
-    border: 2px solid black;
-    color: #4bb82a;
+    background-color: #7BC8FF;
     text-align: center;
+    border-radius: 50%;
 }
 
 .dayNow:hover {
-    background-color: yellow;
+    background-color: #D4D4D4;
     cursor: pointer;
 }
 
 #calendar {
-    width: 270px;
+    width: 100%;
+    margin: 1rem 0 0;
     /*transition: transform .8s;*/
 }
 
+.calendar {
+    width: 100%;
+}
+
 .calendar td{
-    width: 40px;
+    padding: 1.5rem 1rem;
 }
 .yearNow th{
-    background-color: #000000;
-    color: #FFFFFF;
-    text-align: center;
+    text-align: left;
+    font-size: 1.75rem;
+    color: #0051AF;
 }
 
 .monthNow:hover{
-    background-color: yellow;
+    background-color: #D4D4D4;
+    border-radius: 50%;
     cursor: pointer;
 }
 
 .dayNames{
-    background: #0FF000;
-    color: #FFFFFF;
+    color: #929292;
     text-align: center;
+}
+
+.calendar .dayNames td {
+    padding: 2rem 0;
+    font-size: 1.5rem;
 }
 
 .monthLeft, .monthRight {
