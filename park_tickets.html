@@ -3,70 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <title>The Theme Park</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Saira+Stencil+One&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/park_tickets.css">
 </head>
 <body onload="renderCalendar()">
 <!--------------- HEADER --------------->
-<header>
-    <h1><a href="index.html"> The Theme Park</a></h1>
-    <nav>
-        <ul>
-            <li><a href="things_to_do.html">Things to Do</a></li>
-            <li><a href="park_tickets.html">Park Tickets</a></li>
-        </ul>
-    </nav>
+<header class="header">
+    <div class="header__wrapper">
+        <h1 class="header__title"><a href="./index.html"> The Theme Park</a></h1>
+        <nav>
+            <ul class="header__menu_list">
+                <li><a href="./things_to_do.html">Things to Do</a></li>
+                <li><a href="#">Park Tickets</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 <!--------------- MAIN IMAGE --------------->
-<section>
-    <picture>
+<section class="main">
+    <picture class="main__picture">
         <source srcset="images/park_tickets_main_sp.png" media="(max-width: 500px)"/>
-        <img src="images/park_tickets_main.png" alt="main image"/>
+        <img src="./images/park_tickets_main.png" alt="main image" class="main__image_pc"/>
     </picture>
 </section>
-<!------------ MAP AND DETAILS ------------>
-<section>
-    <div class="grid">
+<!------------ PARK TICKETS ------------>
+<section class="tickets">
+    <h2 class="tickets__header">Park Tickets</h2>
+    <div class="grid tickets__wrapper">
+        <div class="tickets__annual">
+            <img src="./images/annual_pass.png" alt="">
+            <h3>Annual Pass (Age +3)</h3>
+            <h3>$ 12,990</h3>
+            <p>Annual Passes allow you to <br>enjoy the all year long.</p>
+            <p> To enter a theme park, each passholder <br>must have a theme park <br>reservation in addition to a valid
+                pass.</p>
+        </div>
+        <div class="tickets__single">
+            <img src="./images/theme_park_tickets.png" alt="">
+            <h3>Theme Park Tickets (Age 10+)</h3>
+            <h3>＄109 / Day</h3>
+            <p>We have multiple unique attractions <br>at The Theme Park.</p>
+            <p> There’s plenty of fun for a multi-day stay.</p>
+        </div>
+    </div>
+</section>
+
+
+<!------------ DIRECTIONS AND PARKING ------------>
+<section class="directions">
+    <h2 class="directions__header">Directions and Parking</h2>
+    <div class="directions__wrapper grid">
         <div class="map">
-            <h2>Directions and Parking</h2>
             <div id="map">
-                <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                <iframe width="100%" height="380" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
                         src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=100%20Universal%20City%20Plaza,%20Universal%20City,%20CA%2091608+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
                 </iframe>
             </div>
         </div>
-        <div class="details">
-            <h3>Address</h3>
+        <div class="directions__details">
+            <h3 class="directions__address-header">Address</h3>
             <p>100 Universal City Plaza, Universal City, CA 91608</p>
 
             <h3>Daily Parking Fees Per Vehicle</h3>
-            <p>
-                General Parking Before 5pm - $30
-                General Parking After 5pm - $10
-            </p>
-            <p>
-                General Parking is subject to availability.
-                Parking rate may change without notice.
-            </p>
+            <p>General Parking Before 5pm - $30</p>
+            <p>General Parking After 5pm - $10</p>
+            <br>
+            <p>General Parking is subject to availability.</p>
+            <p>Parking rate may change without notice.</p>
             <h3>Public Transportation</h3>
-            <p>There are many ways to get to Universal Studios Hollywood on public transportation, including frequently
+            <p>There are many ways to get to Universal Studios <br>Hollywood on public transportation, <br>including frequently
                 arriving Metro trains and buses. </p>
         </div>
     </div>
 </section>
-<!--------------- UPCOMING EVENT --------------->
-<section>
-    <h2>Discover all you can see and do at our theme park</h2>
-    <article>
-        <img src="images/event_1.png" alt="Create Holiday Traditions with Friends and Family!"/>
-        <h3>Create Holiday Traditions with Friends and Family!</h3>
-    </article>
-    <article>
-        <img src="images/event_2.png" alt="Halloween  at The Theme park"/>
-        <h3>Halloween at The Theme park</h3>
-    </article>
-    <article>
-        <img src="images/event_3.png" alt="An Earth Day Celebration"/>
-        <h3>An Earth Day Celebration</h3>
-    </article>
+<!--------------- DISCOVER --------------->
+<section class="discover">
+    <h2 class="discover__title">Discover all you can see and do at our theme park</h2>
+    <div class="discover__wrapper grid">
+        <article class="discover__article">
+            <img src="images/event_1.png" alt="Create Holiday Traditions with Friends and Family!"/>
+            <h3>Create Holiday Traditions with Friends and Family!</h3>
+        </article>
+        <article class="discover__article">
+            <img src="images/event_2.png" alt="Halloween  at The Theme park"/>
+            <h3>Halloween at The Theme park</h3>
+        </article>
+        <article class="discover__article">
+            <img src="images/event_3.png" alt="An Earth Day Celebration"/>
+            <h3>An Earth Day Celebration</h3>
+        </article>
+    </div>
+    <div class="discover__learn-more"><a href="">Learn more...</a></div>
 </section>
 <!--------------- FOOTER --------------->
 <footer>

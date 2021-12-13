@@ -403,6 +403,7 @@ summary {
 table {
     border-color: inherit; /* 1 */
     border-collapse: collapse;
+    border-spacing: 10px;
 }
 
 caption {
@@ -418,4 +419,10 @@ th {
 th {
     text-align: left;
     font-weight: bold;
+}
+
+/*Grid*/
+.grid {
+    display: grid;
+    grid-gap: 2rem;
 }
