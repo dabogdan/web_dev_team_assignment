@@ -16,6 +16,7 @@
 
 .things_to_do{
     text-align: center;
+    padding: 1rem;
 }
 
 .things_to_do__title{
@@ -47,11 +48,11 @@
     }
 
     .things_to_do__image img{
-        width: 800px;
+        width: 85%;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
     .things_to_do__title{
         font-size: 20px;
     }
@@ -67,7 +68,7 @@
     }
 
     .things_to_do__image img{
-        width: 380px;
+        min-width: 300px;
     }
 }
 
@@ -148,7 +149,7 @@
     }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width: 768px) {
     .upcoming_event{
         margin: 0 20px;
     }

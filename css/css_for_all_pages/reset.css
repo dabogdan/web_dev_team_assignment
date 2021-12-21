@@ -404,6 +404,8 @@ table {
     border-color: inherit; /* 1 */
     border-collapse: collapse;
     border-spacing: 10px;
+    table-layout: fixed;
+    width: 100%;
 }
 
 caption {
