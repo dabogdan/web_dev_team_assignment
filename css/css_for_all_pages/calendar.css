@@ -26,15 +26,22 @@
 #calendar {
     width: 100%;
     margin: 1rem 0 0;
-    /*transition: transform .8s;*/
+}
+
+#calendar table {
+    table-layout: fixed;
+    width: 320px;
+    height: 380px;
 }
 
 .calendar {
-    width: 100%;
+    margin: 0 auto;
 }
 
 .calendar td{
-    padding: 1.5rem 1rem;
+    padding: .5rem .8rem;
+    width: 80px;
+    line-height: 2;
 }
 .yearNow th{
     text-align: left;
@@ -55,7 +62,7 @@
 
 .calendar .dayNames td {
     padding: 2rem 0;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .monthLeft, .monthRight {
@@ -77,8 +84,16 @@
     position: relative;
     top: 20px;
     transition: transform 0s;
+    height: 450px;
 }
 
 .closeButton {
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .calendar {
+        min-width: 320px;
+        padding: 0;
+    }
 }

@@ -90,42 +90,6 @@ h3 {
     margin: 0 0 1rem 0;
 }
 
-/*@media screen and (max-width: 1200px) {*/
-/*    .things_to_do__title{*/
-/*        padding: 40px 0 0;*/
-/*        font-size: 24px;*/
-/*    }*/
-
-/*    .things_to_do__description{*/
-/*        padding: 20px 0 0;*/
-/*        font-size: 16px;*/
-/*    }*/
-
-/*    .things_to_do__image img{*/
-/*        width: 800px;*/
-/*    }*/
-/*}*/
-
-/*@media screen and (max-width: 500px) {*/
-/*    .things_to_do__title{*/
-/*        font-size: 20px;*/
-/*    }*/
-
-/*    .things_to_do__description{*/
-/*        padding: 12px 20px 0;*/
-/*        font-size: 16px;*/
-/*    }*/
-
-/*    .things_to_do__image{*/
-/*        display: block;*/
-/*        padding: 20px 0 0;*/
-/*    }*/
-
-/*    .things_to_do__image img{*/
-/*        width: 380px;*/
-/*    }*/
-/*}*/
-
 
 /*-----------------------------
    DISCOVER
@@ -135,6 +99,10 @@ h3 {
     margin: 0 auto 2rem;
     max-width: 1200px;
     padding: 0 0 3rem 0;
+}
+
+.discover img {
+    width: 100%;
 }
 
 .discover__title {
@@ -157,106 +125,47 @@ h3 {
     text-decoration: none;
 }
 
-
-
-
-
-.upcoming_event{
-    max-width: 1200px;
-    margin: 0 auto;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 11fr;
+/*-----------------------------
+   Responsive design
+-----------------------------*/
+@media screen and (max-width: 1200px) {
+    .tickets__single, .tickets__annual {
+        padding: 0;
+    }
 }
 
-.upcoming_event__title{
-    font-family: 'Saira Stencil One', cursive;
-    font-size: 28px;
-    color: #0051AF;
-    grid-column: 1/4;
+@media screen and (max-width: 768px) {
+    .grid {
+        grid-template-columns: none;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    .main {
+        padding: 0;
+    }
+
+    .tickets {
+        padding: 0 10px;
+    }
+
+    .tickets__annual, .tickets__single, .discover__wrapper {
+        padding: 0;
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .tickets__annual p, .tickets__single p {
+        width: 300px;
+    }
+
+    section, .directions, .discover {
+        padding: 10px;
+    }
+
+    .discover img {
+        width: 300px;
+    }
 }
-
-.upcoming_event__article{
-    height: 250px;
-}
-
-.article_text{
-    margin: 2rem 0 0 0;
-    text-align: left;
-}
-
-.article_title{
-    color: #0051AF;
-    font-size: 24px;
-    font-weight: 500;
-}
-
-.upcoming__learn-more a {
-    text-decoration: underline;
-    color: #0051AF;
-    float: right;
-    padding: 0 2rem 1rem;
-}
-
-/*@media screen and (max-width: 1200px) {*/
-/*    .upcoming_event{*/
-/*        margin: 0 40px;*/
-/*    }*/
-
-/*    .article_image img{*/
-/*        width: 280px;*/
-/*    }*/
-
-/*    .upcoming_event__title{*/
-/*        padding: 40px 0 20px;*/
-/*        font-size: 24px;*/
-/*    }*/
-
-/*    .article_title{*/
-/*        font-size: 20px;*/
-/*    }*/
-
-/*    .article_date{*/
-/*        font-size: 20px;*/
-/*    }*/
-
-/*    .article_description{*/
-/*        padding: 16px 0 0;*/
-/*        font-size: 16px;*/
-/*        line-height: 24px;*/
-/*    }*/
-/*}*/
-
-/*@media screen and (max-width:500px) {*/
-/*    .upcoming_event{*/
-/*        margin: 0 20px;*/
-/*    }*/
-
-/*    .article_image img{*/
-/*        width: 300px;*/
-/*    }*/
-
-/*    .upcoming_event__article{*/
-/*        flex-flow: column;*/
-/*        align-items: center;*/
-/*    }*/
-
-/*    .upcoming_event__title{*/
-/*        font-size: 20px;*/
-/*        text-align: center;*/
-/*    }*/
-
-/*    .article_text{*/
-/*        width: 300px;*/
-/*        padding: 0;*/
-/*    }*/
-
-/*    .article_title{*/
-/*        padding: 12px 0 0;*/
-/*        line-height: 24px;*/
-/*    }*/
-
-/*    .article_date{*/
-/*        font-size: 16px;*/
-/*    }*/
-
-/*}*/

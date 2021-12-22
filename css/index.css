@@ -51,74 +51,43 @@
     text-align: center;
 }
 
-/*@media screen and (max-width: 1200px) {*/
-/*    .things_to_do__title{*/
-/*        padding: 40px 0 0;*/
-/*        font-size: 24px;*/
-/*    }*/
-
-/*    .things_to_do__description{*/
-/*        padding: 20px 0 0;*/
-/*        font-size: 16px;*/
-/*    }*/
-
-/*    .things_to_do__image img{*/
-/*        width: 800px;*/
-/*    }*/
-/*}*/
-
-/*@media screen and (max-width: 500px) {*/
-/*    .things_to_do__title{*/
-/*        font-size: 20px;*/
-/*    }*/
-
-/*    .things_to_do__description{*/
-/*        padding: 12px 20px 0;*/
-/*        font-size: 16px;*/
-/*    }*/
-
-/*    .things_to_do__image{*/
-/*        display: block;*/
-/*        padding: 20px 0 0;*/
-/*    }*/
-
-/*    .things_to_do__image img{*/
-/*        width: 380px;*/
-/*    }*/
-/*}*/
-
-
 /*-----------------------------
    UPCOMING EVENT
 -----------------------------*/
 
 .upcoming {
-    margin: 0 0 2rem;
+    margin: 0 0 4rem;
+    padding: 0 2rem;
 }
-.upcoming_event{
+
+.upcoming_event {
     max-width: 1200px;
     margin: 0 auto;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 11fr;
 }
 
-.upcoming_event__title{
+.upcoming_event__title {
     font-family: 'Saira Stencil One', cursive;
     font-size: 28px;
     color: #0051AF;
     grid-column: 1/4;
 }
 
-.upcoming_event__article{
-    height: 250px;
+.upcoming_event__article {
+    width: 100%;
 }
 
-.article_text{
+.article_image img {
+    width: 100%;
+}
+
+.article_text {
     margin: 2rem 0 0 0;
     text-align: left;
 }
 
-.article_title{
+.article_title {
     color: #0051AF;
     font-size: 24px;
     font-weight: 500;
@@ -135,66 +104,30 @@
     text-decoration: underline;
 }
 
-/*@media screen and (max-width: 1200px) {*/
-/*    .upcoming_event{*/
-/*        margin: 0 40px;*/
-/*    }*/
+@media screen and (max-width: 768px) {
+    .calendar_map__wrapper, .upcoming_event, .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+        max-width: 500px;
+        margin: 1rem auto;
+    }
 
-/*    .article_image img{*/
-/*        width: 280px;*/
-/*    }*/
+    .calendar_map__location {
+        padding: 0 10px;
+    }
 
-/*    .upcoming_event__title{*/
-/*        padding: 40px 0 20px;*/
-/*        font-size: 24px;*/
-/*    }*/
+    .calendar_map__location button {
+        padding: 1rem 4rem;
+        width: 280px;
+        margin: 0 auto;
+    }
 
-/*    .article_title{*/
-/*        font-size: 20px;*/
-/*    }*/
+    .calendar_map {
+        padding: 0;
+    }
 
-/*    .article_date{*/
-/*        font-size: 20px;*/
-/*    }*/
+    .upcoming_event__title {
+        grid-column: unset;
+    }
 
-/*    .article_description{*/
-/*        padding: 16px 0 0;*/
-/*        font-size: 16px;*/
-/*        line-height: 24px;*/
-/*    }*/
-/*}*/
-
-/*@media screen and (max-width:500px) {*/
-/*    .upcoming_event{*/
-/*        margin: 0 20px;*/
-/*    }*/
-
-/*    .article_image img{*/
-/*        width: 300px;*/
-/*    }*/
-
-/*    .upcoming_event__article{*/
-/*        flex-flow: column;*/
-/*        align-items: center;*/
-/*    }*/
-
-/*    .upcoming_event__title{*/
-/*        font-size: 20px;*/
-/*        text-align: center;*/
-/*    }*/
-
-/*    .article_text{*/
-/*        width: 300px;*/
-/*        padding: 0;*/
-/*    }*/
-
-/*    .article_title{*/
-/*        padding: 12px 0 0;*/
-/*        line-height: 24px;*/
-/*    }*/
-
-/*    .article_date{*/
-/*        font-size: 16px;*/
-/*    }*/
-
-/*}*/
+}

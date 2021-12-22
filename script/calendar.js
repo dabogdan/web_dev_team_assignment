@@ -1,7 +1,6 @@
 // The calendar was made on the basis of the simple one https://www.webcodegeeks.com/javascript/javascript-calendar-example/, but deeply adjusted
 
 
-
 let calendarTag = document.getElementById("calendar");
 
 //global vars to render the calendar
@@ -30,7 +29,7 @@ const dayPerMonth = ["31", `${FebNumberOfDays}`, "31", "30", "31", "30", "31", "
 let events = ['1st day of the month', '2nd day of the month', '3rd day of the month', undefined, '5th day of the month'];
 
 //render the dates in the calendar with while loops
-function renderDates (month) {
+function renderDates(month) {
     htmlContent = '';
     counter = 1;
     weekdays = dayNames.indexOf(dayNames[new Date(year, month, 1).getDay()]); //get the number of the day of the week in current month
@@ -38,11 +37,11 @@ function renderDates (month) {
     //white spaces btw the dates
     numOfDays = dayPerMonth[month];
     while (counter <= numOfDays) {
-        while (weekdays > 0) {//empty days in the rable
+        while (weekdays > 0) {//empty days in the rable for the previous month
             htmlContent += "<td class='monthPre'></td>";
             weekdays--;
         }
-        if (weekdays2 > 6) {
+        if (weekdays2 > 6) {//dates of current month
             weekdays2 = 0;
             htmlContent += "</tr><tr>";
         }
@@ -56,7 +55,7 @@ function renderDates (month) {
     }
 }
 
-function mapEventsToDates (daysPerMonth) {
+function mapEventsToDates(daysPerMonth) {
     const dates = document.querySelectorAll('.monthNow');
     for (let i = 0; i < daysPerMonth; i++) {
         dates[i].setAttribute('onClick', 'showEvent(this, true);')
@@ -69,16 +68,16 @@ function mapEventsToDates (daysPerMonth) {
     }
 }
 
-function showEvent (e, c){
+function showEvent(e, c) {
     if (c) {
-        calendarTag.innerHTML = "<div class = 'eventTag' onclick='showEvent(null, false)'>" + "<button class='closeButton'> << </button><br><br>" + e.getAttribute('eventTag')  + "</div>";
+        calendarTag.innerHTML = "<div class = 'eventTag' onclick='showEvent(null, false)'>" + "<button class='closeButton'> << </button><br><br>" + e.getAttribute('eventTag') + "</div>";
     } else {
         renderCalendar()
     }
 }
 
-function renderCalendarBody () {
-    let calendarBody = "<table class='calendar'> <tr class='yearNow'><th colspan='4'>"
+function renderCalendarBody() {
+    let calendarBody = "<table class='calendar'> <tr class='yearNow'><th colspan='5'>"
         + monthNames[month] + " " + year + "</th><th class='monthLeft' onClick='renderCalendar(-1)'><<</th><th class='monthRight' onClick='renderCalendar(1)'>>></th></tr>";
     calendarBody += "<tr class='dayNames'>  <td>Sun</td>  <td>Mon</td> <td>Tue</td>" +
         "<td>Wed</td> <td>Thu</td> <td>Fri</td> <td>Sat</td> </tr>";
@@ -89,9 +88,9 @@ function renderCalendarBody () {
 }
 
 function renderCalendar(renderedMonth = month) {
-    if (renderedMonth !== dateNow.getMonth()){
+    if (renderedMonth !== dateNow.getMonth()) {
         month += renderedMonth;
-        if(month >= 12) {
+        if (month >= 12) {
             month = 0;
             year += 1;
         } else if (month < 0) {
