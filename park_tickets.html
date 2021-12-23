@@ -12,13 +12,37 @@
 </head>
 <body onload="renderCalendar()">
 <!--------------- HEADER --------------->
-<header class="header">
+<header class="header desktop">
     <div class="header__wrapper">
         <h1 class="header__title"><a href="./index.html"> The Theme Park</a></h1>
         <nav>
             <ul class="header__menu_list">
                 <li><a href="./things_to_do.html">Things to Do</a></li>
                 <li><a href="#">Park Tickets</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!--------------- HEADER MOBILE--------------->
+<header class="header mobile">
+    <div class="header__wrapper">
+        <nav>
+            <ul>
+                <details>
+                    <summary>
+                        <img class="header__burger-icon" src="images/burger.svg">
+                        <br><br>
+                    </summary>
+                    <div class="header__spacer">
+                        <li><h1 class="header__title"><a href="./index.html"> The Theme Park</a></h1></li>
+                        <div class="header__spacer"></div>
+                        <li><h1 class="header__title"><a href="./things_to_do.html">Things to Do</a></h1></li>
+                        <div class="header__spacer"></div>
+                        <li><h1 class="header__title"><a href="./park_tickets.html">Park Tickets</a></h1></li>
+                        <div class="header__spacer"></div>
+                        <img class="header__social-icons" src="images/socials.svg">
+                    </div>
+                </details>
             </ul>
         </nav>
     </div>
@@ -101,6 +125,20 @@
 </section>
 <!--------------- FOOTER --------------->
 <footer>
+    <div class="grid footer__wrapper">
+        <div class="footer__left">
+            <h1 class="footer__site_name">The Theme Park</h1>
+            <h2 class="footer__address">Address</h2>
+            <p class="footer__address_text">100 Universal City Plaza, Universal City, CA 91608</p>
+        </div>
+        <div class="footer__right">
+            <div class="footer__social_wrapper grid">
+                <a href="https://instagram.com" class="insta_icon"><img src="images/instagram_icon.png" alt="instagram_icon"></a>
+                <a href="https://https://www.facebook.com/" class="fb_icon"><img src="images/facebook_icon.png" alt="facebook_icon"></a>
+                <a href="https://twitter.com/" class="twitter_icon"><img src="images/twitter_icon.png" alt="twitter_icon"></a>
+            </div>
+        </div>
+    </div>
     <p>Copyright © 2021 Theme Park Name. All Rights Reserved.</p>
 </footer>
 </body>
