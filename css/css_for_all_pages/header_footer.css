@@ -47,6 +47,7 @@ body{
     margin: 0 60px 0 0;
 }
 
+
 @media only screen and (max-width: 1200px) {
     .header__wrapper{
         margin: 0 40px;
@@ -90,69 +91,13 @@ footer{
     color: #fff;
     text-align: center;
     font-size: 16px;
-    padding: 1.7rem 0;
+    padding: 40px 0;
 }
 
-.footer__wrapper {
-    grid-template-columns: 1fr 1fr;
-    padding: 0 3rem 5rem;
-    grid-gap: 2rem;
-}
-
-.footer__left {
-    text-align: left;
-}
-
-.footer__left h2 {
-    text-align: left;
-    margin: 0;
-}
-
-.footer__site_name {
-    font-size: 1.75rem;
-    color: white;
-    font-family: 'Saira Stencil One', cursive;
-    margin: 1rem 0 2rem;
-}
-
-.footer__address {
-    font-size: 1.5rem;
-    color: white;
-    font-family: 'Saira Stencil One', cursive;
-}
-
-.footer__address_text {
-    font-size: 1rem;
-}
-
-.footer__right .footer__social_wrapper {
-    grid-template-columns: repeat(3, 3rem);
-    grid-gap: 1rem;
-    grid-auto-columns: fit-content(3rem);
-    margin: 1rem 2rem;
-    float: right;
-}
-
-.footer__social_wrapper img {
-    width: 3rem;
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
     footer{
         padding: 28px 0;
         font-size: 12px;
-        max-width: 1200px;
-    }
-    .footer__left {
-        text-align: center;
-    }
-
-    .footer__left h2 {
-        text-align: center;
-    }
-
-    .footer__right {
-        margin: auto;
     }
 }
 
